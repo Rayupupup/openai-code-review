@@ -57,17 +57,17 @@ jobs:
         run: java -jar ./libs/openai-code-review-sdk-1.0.jar
         env:
           # Github 配置；GITHUB_REVIEW_LOG_URI「https://github.com/xfg-studio-project/openai-code-review-log」、GITHUB_TOKEN「https://github.com/settings/tokens」
-          GITHUB_REVIEW_LOG_URI: ${{ secrets.CODE_REVIEW_LOG_URI }}
+          GITHUB_REVIEW_LOG_URI: https://github.com/Rayupupup/code-review-log
           GITHUB_TOKEN: ${{ secrets.CODE_TOKEN }}
-          COMMIT_PROJECT: ${{ env.REPO_NAME }}
-          COMMIT_BRANCH: ${{ env.BRANCH_NAME }}
-          COMMIT_AUTHOR: ${{ env.COMMIT_AUTHOR }}
-          COMMIT_MESSAGE: ${{ env.COMMIT_MESSAGE }}
+          COMMIT_PROJECT: openai-code-review
+          COMMIT_BRANCH: main
+          COMMIT_AUTHOR: Rayupupup
+          COMMIT_MESSAGE: Code Review by OpenAiCodeReview
           # 微信配置 「https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index」
-          WEIXIN_APPID: ${{ secrets.WEIXIN_APPID }}
-          WEIXIN_SECRET: ${{ secrets.WEIXIN_SECRET }}
-          WEIXIN_TOUSER: ${{ secrets.WEIXIN_TOUSER }}
-          WEIXIN_TEMPLATE_ID: ${{ secrets.WEIXIN_TEMPLATE_ID }}
+          WEIXIN_APPID: 1
+          WEIXIN_SECRET: 1
+          WEIXIN_TOUSER: 1
+          WEIXIN_TEMPLATE_ID: 1
           # OpenAi - ChatGLM 配置「https://open.bigmodel.cn/api/paas/v4/chat/completions」、「https://open.bigmodel.cn/usercenter/apikeys」
-          CHATGLM_APIHOST: ${{ secrets.CHATGLM_APIHOST }}
-          CHATGLM_APIKEYSECRET: ${{ secrets.CHATGLM_APIKEYSECRET }}%
+          CHATGLM_APIHOST: https://open.bigmodel.cn/api/paas/v4/chat/completions
+          CHATGLM_APIKEYSECRET: 65d4a9300c594640b108412bdb67dfeb.MwQdCNTRcIDqvECw
