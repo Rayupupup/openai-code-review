@@ -1,1 +1,12 @@
 /.idea/
+/openai-code-review-sdk/target/**
+/openai-code-review-test/target/**
+/openai-code-review-test/target/
+/openai-code-review-test/target/classes/
+/openai-code-review-test/target/generated-sources/
+/openai-code-review-test/target/generated-test-sources/
+/openai-code-review-test/target/maven-archiver/
+/openai-code-review-test/target/maven-status/
+/openai-code-review-test/target/test-classes/
+/openai-code-review-test/target/openai-code-review-test.jar
+/openai-code-review-test/target/openai-code-review-test.jar.original
